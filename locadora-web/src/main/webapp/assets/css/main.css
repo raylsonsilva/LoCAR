@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.ui-panelgrid .ui-grid-responsive .ui-panelgrid-cell  {
+   	text-align: center;
+}
+
+.value {
+   	font-weight: bold;
+}
+
+.center {
+  	text-align: center;
+}
+
+.ui-menubar,.ui-menu-child,.ui-menu {
+   	background: white !important;
+  	border-color: white;
+}
+
+.ui-menuitem-icon {
+	margin-right: 5px !important;
+}
