@@ -11,24 +11,24 @@ import javax.inject.Named;
 
 import org.apache.commons.lang3.StringUtils;
 
-import br.com.iw.entity.ModeloCarro;
-import br.com.iw.service.ModeloCarroService;
+import br.com.iw.entity.Acessorio;
+import br.com.iw.service.AcessorioService;
 
 @Named
 @ApplicationScoped
-public class ModeloCarroConverter implements Converter<Object>, Serializable {
+public class AcessorioConverter implements Converter<Object>, Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	
 	@Inject
-	private ModeloCarroService modeloCarroService;
+	private AcessorioService acessorioService;
 
 	@Override
 	public Object getAsObject(FacesContext context, UIComponent component, String value) {
-		ModeloCarro retorno = null;
+		Acessorio retorno = null;
 
 		if (StringUtils.isNotBlank(value)) {
-			retorno = (ModeloCarro) this.modeloCarroService.buscarModeloPorId(new Long(value));
+			retorno = (Acessorio) this.acessorioService.buscarAcessorioPorId(new Long(value));
 		}
 
 		return retorno;
@@ -37,7 +37,7 @@ public class ModeloCarroConverter implements Converter<Object>, Serializable {
 	@Override
 	public String getAsString(FacesContext context, UIComponent component, Object value) {
 		if (value != null) {
-			Long codigo = ((ModeloCarro) value).getId();
+			Long codigo = ((Acessorio) value).getId();
 			return codigo.toString();
 		}
 		return null;

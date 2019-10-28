@@ -22,10 +22,14 @@
 				            <p:menuitem value="Funcionário" outcome="/funcionario/cadastro" icon="fa fa-user-md" />
 				            <p:menuitem value="Motorista" outcome="/motorista/cadastro" icon="fa fa-user" />
 				            <p:submenu label="Carro" icon="fa fa-car">
-				            	<p:menuitem value="Carro" icon="fa fa-car"  />
+				            	<p:menuitem value="Carro" outcome="/carro/cadastro" icon="fa fa-car"  />
 				            	<p:menuitem value="Modelo" outcome="/modelo/cadastro" icon="fa fa-cogs"  />
-				            	<p:menuitem value="Acessório" icon="fa fa-wrench" />
+				            	<p:menuitem value="Acessório" outcome="/acessorio/cadastro" icon="fa fa-wrench" />
 				            </p:submenu>
+				        </p:submenu>
+				        <p:submenu label="Aluguel" icon="fa fa-key">
+				        	<p:menuitem value="Novo" icon="fa fa-plus-circle" />
+				        	<p:menuitem value="Pesquisar" icon="fa fa-search" />
 				        </p:submenu>	 		 
 				        <f:facet name="options">
 				            <p:commandButton type="button" value="Sair" icon="fa fa-fw fa-sign-out" />

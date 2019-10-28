@@ -24,3 +24,11 @@
 .ui-menuitem-icon {
 	margin-right: 5px !important;
 }
+
+.col1 {
+	width: 20% !important;
+}
+
+.col2 {
+	width: 80% !important;
+}
